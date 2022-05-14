@@ -15,6 +15,11 @@ public class Gamemanager : MonoBehaviour
     [SerializeField] GameObject start_text;
     [SerializeField] private Camera mine;
     [SerializeField] private Camera animcamera;
+    [SerializeField] private Rigidbody enmy;
+
+    public TimeManager slow;
+
+
     void Start()
     {
         GameManagerInstance = this;
@@ -119,9 +124,10 @@ public class Gamemanager : MonoBehaviour
 
     void Game_ended()
     {
-        animcamera.enabled = true;
+        enmy.AddForce(new Vector3(0, 300, scor*50));
         mine.enabled = false;
-
+        animcamera.enabled = true;
     }
+ 
 
     }

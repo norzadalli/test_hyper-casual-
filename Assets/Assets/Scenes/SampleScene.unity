@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 43496185}
   - component: {fileID: 43496184}
   - component: {fileID: 43496183}
+  - component: {fileID: 43496182}
   m_Layer: 0
   m_Name: animcamera
   m_TagString: MainCamera
@@ -174,6 +175,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &43496182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43496181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32253d705dbf31240911db2b71cde915, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1331575294}
+  smoothness: 0.1
 --- !u!81 &43496183
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1291,6 +1306,7 @@ GameObject:
   - component: {fileID: 1331575293}
   - component: {fileID: 1331575292}
   - component: {fileID: 1331575291}
+  - component: {fileID: 1331575295}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1368,12 +1384,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331575290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.39, y: 0.61, z: 26.338034}
+  m_LocalPosition: {x: 1.07, y: 0.97, z: 28.12}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1331575295
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331575290}
+  serializedVersion: 2
+  m_Mass: 0.3
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1487968936
 GameObject:
   m_ObjectHideFlags: 0
@@ -1418,6 +1450,8 @@ MonoBehaviour:
   start_text: {fileID: 546439263}
   mine: {fileID: 963194227}
   animcamera: {fileID: 43496184}
+  enmy: {fileID: 1331575295}
+  slow: {fileID: 0}
 --- !u!54 &1487968938
 Rigidbody:
   m_ObjectHideFlags: 0
