@@ -48,19 +48,19 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2002}
+      Script: {instanceID: 1998}
     - Class: 114
-      Script: {instanceID: 2294}
+      Script: {instanceID: 2290}
     - Class: 114
-      Script: {instanceID: 2406}
+      Script: {instanceID: 2402}
     - Class: 114
-      Script: {instanceID: 2572}
+      Script: {instanceID: 2568}
     - Class: 114
-      Script: {instanceID: 2756}
+      Script: {instanceID: 2752}
     - Class: 114
-      Script: {instanceID: 16766}
+      Script: {instanceID: 3956}
     - Class: 114
-      Script: {instanceID: 17122}
+      Script: {instanceID: 4272}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -462,10 +462,22 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
+      Hash: 6028328a50b04a5e95cf63b07292bd0f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TimeManager
+  - hash:
+      serializedVersion: 2
       Hash: 6980e81ddc615a861309d2d659cc3760
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: ea8c34eed000f059e74e4319277e0188
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraMovement
   - hash:
       serializedVersion: 2
       Hash: fd68d84f33fad85aac38f2739c0ee270
@@ -478,6 +490,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 7b5042b33f52c58051756123a61dcd4e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Gamemanager
   - hash:
       serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
@@ -502,25 +520,7 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: ea8c34eed000f059e74e4319277e0188
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CameraMovement
-  - hash:
-      serializedVersion: 2
-      Hash: 2fbcfabaabaa95bfc7b24cd1e35e31a4
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Gamemanager
-  - hash:
-      serializedVersion: 2
-      Hash: 6028328a50b04a5e95cf63b07292bd0f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TimeManager
   platform: 13
   scenePathNames:
   - Assets/Assets/Scenes/SampleScene.unity
-  playerPath: D:/test_game/New Unity Project/apk/t1.apk
+  playerPath: D:/test_game/New Unity Project/apk/t2.apk
