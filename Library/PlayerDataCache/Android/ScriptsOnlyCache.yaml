@@ -12,8 +12,10 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Assets/Scenes/SampleScene.unity:
@@ -43,10 +45,14 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
+    - Class: 96
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1478}
     - Class: 114
       Script: {instanceID: 1998}
     - Class: 114
@@ -57,6 +63,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2568}
     - Class: 114
       Script: {instanceID: 2752}
+    - Class: 114
+      Script: {instanceID: 2838}
     - Class: 114
       Script: {instanceID: 3956}
     - Class: 114
@@ -70,6 +78,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -492,7 +502,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 7b5042b33f52c58051756123a61dcd4e
+      Hash: 0810e181331ee6d0de1e9102030d0799
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Gamemanager
@@ -523,4 +533,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Assets/Scenes/SampleScene.unity
-  playerPath: D:/test_game/New Unity Project/apk/t2.apk
+  playerPath: D:/test_game/New Unity Project/apk/t3.apk

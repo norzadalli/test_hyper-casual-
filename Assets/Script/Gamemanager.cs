@@ -3,6 +3,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class Gamemanager : MonoBehaviour
 {
     [HideInInspector] public bool MoveByTouch, StartTheGame,EndGame;
@@ -20,13 +21,21 @@ public class Gamemanager : MonoBehaviour
     public TimeManager slow;
 
 
+
+    [SerializeField] bool start;
+    [SerializeField] GameObject Game_over_panel;
+
+
+
+
     void Start()
     {
         GameManagerInstance = this;
         Scor_Text.text = scor.ToString();
-        Destroy(start_text);
+        start = true;
         EndGame = false;
         animcamera.enabled = false;
+        Game_over_panel.SetActive(false);
     }
 
     void Update()
@@ -39,6 +48,11 @@ public class Gamemanager : MonoBehaviour
             {
                 StartTheGame = MoveByTouch = true;
                 Debug.Log("true");
+                if (start)
+                {
+                    start_text.SetActive(false);
+                    start = false;
+                }
             }
 
             if (Input.GetMouseButtonUp(0))
@@ -73,7 +87,14 @@ public class Gamemanager : MonoBehaviour
             }
 
             if (StartTheGame)
+            {
+               
                 gameObject.transform.Translate(Vector3.forward * (RoadSpeed * Time.deltaTime));
+
+              
+
+            }
+              
 
         }
 
@@ -93,7 +114,7 @@ public class Gamemanager : MonoBehaviour
 
         if (other.CompareTag("wall"))
         {
-            if (scor>=0)
+            if (scor>=1)
             {
                 scor -= 1;
                 Scor_Text.text = scor.ToString();
@@ -118,7 +139,14 @@ public class Gamemanager : MonoBehaviour
     }   
     void Game_over()
     {
-        
+        EndGame = true;
+        Game_over_panel.SetActive(true);
+
+    }
+
+  public  void restartbrn()
+    {
+        SceneManager.LoadScene("SampleScene");
 
     }
 
